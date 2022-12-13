@@ -3,24 +3,136 @@
     <head>
         <meta charset="UTF-8">
         <title>Uzduotys</title>
-        <script src="js/script.js"></script>
+
     </head>
     <body>
-        <header>
+        <h2>Užduočių atsakymai:</h2>
+        <h3>1 užduotis: console</h3>
+        <h3>2 užduotis:</h3>
+        <p id="ats"></p>
+        <h3>3 užduotis: scripte</h3>
+        <h3>4 užduotis: </h3>
+        <script>
+            //task 1
 
-        </header>
-        <main>
-            <h1>Pirma antraste</h1>
-            <p>Pirmas paragrafas</p>
-            <p>Antras paragrafas</p>
-            <p>Trecias paragrafas</p>
-            <h2>Antra antraste</h2>
-            <p><b><i><del>Pirmas</del></i></b> <strong>paragrafas</strong> <i>kuris</i> <em>turi</em> <mark>daug</mark> <small>skirtingu</small>
-                <del>panaudotu</del> <ins>tektsto</ins> <sup>stilizavimo</sup> <sub>budu.</sub></p>
-            <p>Antras paragrafas</p>
-        </main>
-        <footer>
+            let r = 15;
+            let ilgis, plotas;
+            ilgis = 2 * Math.PI * r;
+            plotas = Math.PI * Math.pow(r, 2);
 
-        </footer>
+            console.log("Apskritimo ilgis: " + Math.round(ilgis));
+            console.log("Apskritimo plotas: " + Math.round(plotas));
+
+            //task 2
+
+            let a = -5,
+                b = 0,
+                c = -4,
+                d = 4;
+            let x, y;
+            x = c;
+            y = b;
+            let ats = "X: " + x + " Y: " + y;
+            document.getElementById("ats").innerHTML = ats;
+
+            // task 2 with if
+
+            /*let a = 6,
+                b = -5,
+                c = 8,
+                d = -2;
+            let x, y;
+            if (a <= c) // salygos tikrinimas
+            {
+                if (a <= b) // pirmas intervalas didejantis
+                {
+                    if (c <= d) // antras intervalas didejantis
+                    {
+                        if (c <= b)
+                        {
+                            x = c;
+                            if (b <= d)
+                            {
+                                y = b;
+                            }
+                            else
+                            {
+                                y = d;
+                            }
+                            let ats = "X: " + x + " Y: " + y;
+                            document.getElementById("ats").innerHTML = ats;
+                        }
+                        else
+                        {
+                            let ats = "Intervalu nera.";
+                            document.getElementById("ats").innerHTML = ats;
+                        }
+                    }
+                    else // antras intervalas mazejantis
+                    {
+                        x = a;
+                        y = c;
+                        let ats = "X: " + x + " Y: " + y;
+                        document.getElementById("ats").innerHTML = ats;
+                    }
+                }
+                else // pirmas intervalas mazejantis
+                {
+                    if (c <= d) // antras intervalas didejantis
+                    {
+                        let ats = "Intervalu nera.";
+                        document.getElementById("ats").innerHTML = ats;
+                    }
+                    else // antras intervalas mazejantis
+                    {
+                        if (a >= d)
+                        {
+                            y = a;
+                            if(b <= d)
+                            {
+                                x = d;
+                            }
+                            else
+                            {
+                                x = b;
+                            }
+                            let ats = "X: " + x + " Y: " + y;
+                            document.getElementById("ats").innerHTML = ats;
+                        }
+                        else
+                        {
+                            let ats = "Intervalu nera.";
+                            document.getElementById("ats").innerHTML = ats;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                let ats = "Ivesti neteisingi parametrai.";
+                document.getElementById("ats").innerHTML = ats;
+            }*/
+
+            //task 3
+
+            let vardas = "Lukas",
+                pavarde = "Bočkus",
+                kursas = 1,
+                istaiga = "Code academy";
+            let pazymiai = [8, 7, 9, 6];
+
+            //task 4
+            document.write(vardas + " " + pavarde + " mokosi " + istaiga + " " + kursas + " kurse, jo pažymiai: " + pazymiai);
+
+            //task 5
+
+            let task5 = "Parametro vardas tipas: " + typeof(vardas) + "\n" +
+                "Parametro pavarde tipas: " + typeof(pavarde) + "\n" +
+                "Parametro kursas tipas: " + typeof(kursas) + "\n" +
+                "Parametro istaiga tipas: " + typeof(istaiga) + "\n" +
+                "Parametro pazymiai tipas: " + typeof(pazymiai) + "\n";
+        </script>
+        <h3>5 užduotis</h3>
+        <button onclick="document.write(task5)">Press me</button>
     </body>
 </html>
