@@ -29,10 +29,7 @@
                 b = 0,
                 c = -4,
                 d = 4;
-            let x, y;
-            x = c;
-            y = b;
-            let ats = "X: " + x + " Y: " + y;
+            let ats = "X: " + Math.min(c, b) + " Y: " + Math.min(b, d);
             document.getElementById("ats").innerHTML = ats;
 
             // task 2 with if
