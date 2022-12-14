@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Uzduotys</title>
+    </head>
+    <body>
+        <h2>Užduočių atsakymai:</h2>
+        <h3>1 užduotis:</h3>
+        <p id="t1">Išrinkti masyvo elementai: </p>
+        <h3>2 užduotis:</h3>
+        <h3>3 užduotis:</h3>
+        <p id="t3">Skaičiai masyve: </p>
+        <h3>4 užduotis:</h3>
+        <p id="t4">Object tipo elementų masyve yra: </p>
+        <h3>5 užduotis</h3>
+        <p id="t5">Sujungti string elementai: </p>
+        <script>
+
+            //task 1 and 2
+            let a = ['A', 'B', '1', 1, 2, 'Vardas', '', [], null];
+            let j = 0;
+            let kasKelinta = 2;
+            while (j < a.length) {
+                document.getElementById("t1").innerHTML += a[j] + ", ";
+                j += kasKelinta;
+            }
+
+            //task 3, 4 and 5
+            let b = [];
+            let objectCount = 0;
+            for(i = 0; i < a.length; i++){
+                //task 3
+                if(typeof a[i] === 'number'){
+                    b.push(a[i]);
+                }
+                //task 4
+                if(typeof a[i] === 'object'){
+                    objectCount++;
+                }
+                //task 5
+                if(typeof a[i] === 'string'){
+                    document.getElementById("t5").innerHTML += a[i] + "_";
+                }
+            }
+            document.getElementById("t3").innerHTML += b;
+            document.getElementById("t4").innerHTML += objectCount;
+
+        </script>
+    </body>
+</html>
