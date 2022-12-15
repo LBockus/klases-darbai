@@ -193,3 +193,22 @@ function raidziuMasyvoGeneratorius(sk) {
     }
     return masyvas;
 }
+
+//task 17.4
+
+function printToInput(x) {
+    document.getElementById('tekstas').value = x;
+}
+printToInput(x);
+
+//task 17.5
+
+function getNumbersFromInput() {
+    let num = document.getElementById('tekstas').value;
+    let numArray = Array.from(num);
+    for(let i = 0; i < numArray.length; i++) {
+        numArray[i] = parseInt(numArray[i]);
+    }
+    let result = sudeti(numArray, 'even');
+    printToInput(result);
+}
