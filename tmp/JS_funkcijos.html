@@ -3,15 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>JS funkcijos</title>
+    <link rel="stylesheet" href="../css/JS_funkcijos.css">
 
 </head>
 <body>
-    <h3>Input laukelis:</h3>
-    <form action="">
-        <label for="tekstas">Iveskite skaicius</label>
-        <input type="text" id="tekstas" name="tekstas">
-        <input type="button" value="Skaiciuti" onclick="getNumbersFromInput()">
-    </form>
+    <header></header>
+    <main>
+        <h3 id="label">Input laukelis:</h3>
+        <form action="">
+            <label for="tekstas">Iveskite skaicius</label>
+            <input type="text" id="tekstas" name="tekstas">
+            <input type="button" value="Skaiciuoti" onclick="getNumbersFromInput()">
+        </form>
+        <h3 class="zalia">Zalia antraste</h3>
+        <h2 class="melyna">Melyna antraste</h2>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <div class="nuorodos">
+            <a href="JS_funkcijos.html">Sitas puslapis</a>
+            <a href="JS_funkcijos.html">Vel sitas puslapis</a>
+            <a href="JS_funkcijos.html">O kas gi cia?</a>
+        </div>
+    </main>
+    <aside>
+        <h3>Formos uzduotis.</h3>
+        <form action="">
+            <label for="vardas">Jusu vardas</label>
+            <input type="text" id="vardas">
+            <label for="pastas"> Pasto adresas</label>
+            <input type="text" id="pastas">
+            <label for="pasirinkimas">Sutikti su privatumo taisyklemis.</label>
+            <input type="checkbox" id="pasirinkimas">
+            <input type="button" value="Siusti" onclick="formCheck()">
+    </aside>
+    <footer></footer>
     <script src="../js/uzduotys.js"></script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+#label {
+    color: darkred;
+}
+
+.zalia {
+    color: green;
+}
+
+.melyna {
+    color: blue;
+}
+
+main > ul li{
+    font-size: larger;
+    color: lightpink;
+}
+
+.nuorodos > a:visited {
+    color: darkblue;
+}

@@ -212,3 +212,19 @@ function getNumbersFromInput() {
     let result = sudeti(numArray, 'even');
     printToInput(result);
 }
+
+/////////////////////////////////// form check
+
+function formCheck(){
+    let vardas = document.getElementById('vardas').value;
+    let pastas = document.getElementById('pastas').value;
+    let varnele = document.getElementById('pasirinkimas').checked;
+    let validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(typeof vardas === 'string' && validEmail.test(pastas) && varnele) {
+        alert('Forma uzpildyta teisingai');
+    }
+    else {
+        alert('Reikia uzpildyti visus laukus teisingai!');
+    }
+}
+
