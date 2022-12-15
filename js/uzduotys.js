@@ -91,7 +91,7 @@ for(let i = 0; i < studentas.pazymiai.length; i++) {
 }
 
 //task 9
-let suma = 0;
+let pazymiuSuma = 0;
 
 for(let i = 0; i < studentas.pazymiai.length;i++)
 {
@@ -100,10 +100,10 @@ for(let i = 0; i < studentas.pazymiai.length;i++)
 
 //task 10
 
-        suma += studentas.pazymiai[i];
+        pazymiuSuma += studentas.pazymiai[i];
     }
 }
-console.log('Pasirinktu pazymiu suma: ' + suma);
+console.log('Pasirinktu pazymiu suma: ' + pazymiuSuma);
 
 //task 11
 
@@ -123,7 +123,7 @@ else {
     console.log('Kursas nera number');
 }
 
-//task 13
+//task 13 and 14
 function kursoTikrinimas(studentas) {
     if(studentas.kursas === 4 && typeof studentas.kursas === 'number') {
         return ('Studentas ' + studentas.vardas + ' ' + studentas.pavarde + ' yra abiturientas.');
@@ -134,6 +134,62 @@ function kursoTikrinimas(studentas) {
 }
 console.log(kursoTikrinimas(studentuMasyvas[0]));
 
-//task 14
+//task 15
 
+function suma(x, y) {
+    return (x + y);
+}
 
+//task 16
+
+let skaiciuSuma = 0;
+for(let i = 1; i <= 100; i++) {
+    skaiciuSuma = suma(skaiciuSuma, i);
+}
+console.log('Skaiciu suma nuo 1 iki 100: ' + skaiciuSuma);
+
+//task 17.1
+
+let A = [1, 3, 6, 5, 7, 2, 2, 4, 4, 8];
+function sudeti(A, evenOrOdd) {
+    let sumEvenOrOdd = 0;
+    if(evenOrOdd === 'even') {
+        for(let i = 0; i < A.length; i++) {
+            if(A[i] % 2 === 0) {
+                sumEvenOrOdd += A[i];
+            }
+        }
+    }
+    else if(evenOrOdd === 'odd') {
+        for(let i = 0; i < A.length; i++) {
+            if(A[i] % 2 === 1) {
+                sumEvenOrOdd += A[i];
+            }
+        }
+    }
+    else  {
+        sumEvenOrOdd = 'Ivedete neteisingus parametrus';
+    }
+    return sumEvenOrOdd;
+}
+let x = sudeti(A, 'odd');
+
+//task 17.2
+
+function masyvoGeneratorius(sk) {
+    let masyvas = [];
+    for(let i = 0; i < sk; i++) {
+        masyvas[i] = Math.floor(Math.random * 10);
+    }
+    return masyvas;
+}
+
+//task 17.3
+
+function raidziuMasyvoGeneratorius(sk) {
+    let masyvas = [];
+    for(let i = 0; i < sk; i++) {
+        masyvas[i] = String.fromCharCode(Math.floor(Math.random() * (91 - 65) + 65));
+    }
+    return masyvas;
+}
