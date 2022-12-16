@@ -107,11 +107,11 @@ console.log('Pasirinktu pazymiu suma: ' + pazymiuSuma);
 
 //task 11
 
-function randomNumber() {
+function randomPazimys() {
     return Math.floor(Math.random() * studentas.pazymiai.length);
 }
 
-console.log('Dvieju atsitiktiniu pazymiu sandauga: ' + studentas.pazymiai[randomNumber()] * studentas.pazymiai[randomNumber()]);
+console.log('Dvieju atsitiktiniu pazymiu sandauga: ' + studentas.pazymiai[randomPazimys()] * studentas.pazymiai[randomPazimys()]);
 
 //task 12
 
